@@ -10,6 +10,7 @@ knowledge_base = [
         'Visa' : 'Yes',
         'Season_to_visit': ['Spring', 'Summer'],
         'Expected_budget' : 'High',
+        'Rating' : random.uniform(3.5, 5.0)
     },
     {
         'Place' : 'Tokyo',
@@ -20,6 +21,7 @@ knowledge_base = [
         'Visa' : 'Yes',
         'Season_to_visit': ['Spring', 'Autumn'],
         'Expected_budget' : 'Medium',
+        'Rating' : random.uniform(3.5, 5.0)
     },
     {
         'Place' : 'Cancun',
@@ -30,6 +32,7 @@ knowledge_base = [
         'Visa' : 'No',
         'Season_to_visit': ['Winter', 'Spring'],
         'Expected_budget' : 'Low',
+        'Rating' : random.uniform(3.5, 5.0)
     },
      {
         'Place' : 'Rome',
@@ -40,6 +43,7 @@ knowledge_base = [
         'Visa' : 'Yes',
         'Season_to_visit': ['Spring', 'Fall'],
         'Expected_budget' : 'Medium',
+        'Rating' : random.uniform(3.5, 5.0)
     },
     {
         'Place' : 'New York City',
@@ -50,6 +54,7 @@ knowledge_base = [
         'Visa' : 'Yes',
         'Season_to_visit': ['Spring', 'Fall'],
         'Expected_budget' : 'High',
+        'Rating' : random.uniform(3.5, 5.0)
     },
     {
         'Place' : 'Sydney',
@@ -60,6 +65,7 @@ knowledge_base = [
         'Visa' : 'Yes',
         'Season_to_visit': ['Spring', 'Summer'],
         'Expected_budget' : 'High',
+        'Rating' : random.uniform(3.5, 5.0)
     },
      {
         'Place' : 'Bangkok',
@@ -70,6 +76,7 @@ knowledge_base = [
         'Visa' : 'Yes',
         'Season_to_visit': ['Winter', 'Summer'],
         'Expected_budget' : 'Low',
+        'Rating' : random.uniform(3.5, 5.0)
     },
     {
         'Place' : 'Beijing',
@@ -80,6 +87,7 @@ knowledge_base = [
         'Visa' : 'Yes',
         'Season_to_visit': ['Spring', 'Autumn'],
         'Expected_budget' : 'Medium',
+        'Rating' : random.uniform(3.5, 5.0)
     },
     {
         'Place' : 'Seoul',
@@ -90,6 +98,7 @@ knowledge_base = [
         'Visa' : 'Yes',
         'Season_to_visit': ['Spring', 'Autumn'],
         'Expected_budget' : 'Medium',
+        'Rating' : random.uniform(3.5, 5.0)
     },
     {
         'Place' : 'Rio de Janeiro',
@@ -100,6 +109,7 @@ knowledge_base = [
         'Visa' : 'No',
         'Season_to_visit': ['Summer', 'Fall'],
         'Expected_budget' : 'Medium',
+        'Rating' : random.uniform(3.5, 5.0)
     },
     {
         'Place' : 'Machu Picchu',
@@ -110,6 +120,7 @@ knowledge_base = [
         'Visa' : 'No',
         'Season_to_visit': ['Spring', 'Autumn'],
         'Expected_budget' : 'High',
+        'Rating' : random.uniform(3.5, 5.0)
     },
     {
         'Place' : 'Buenos Aires',
@@ -120,6 +131,7 @@ knowledge_base = [
         'Visa' : 'No',
         'Season_to_visit': ['Spring', 'Fall'],
         'Expected_budget' : 'Medium',
+        'Rating' : random.uniform(3.5, 5.0)
     },
     {
         'Place' : 'Cusco',
@@ -130,6 +142,7 @@ knowledge_base = [
         'Visa' : 'No',
         'Season_to_visit': ['Spring', 'Autumn'],
         'Expected_budget' : 'Medium',
+        'Rating' : random.uniform(3.5, 5.0)
     },
     {
         'Place' : 'Santiago',
@@ -140,6 +153,7 @@ knowledge_base = [
         'Visa' : 'No',
         'Season_to_visit': ['Spring', 'Summer'],
         'Expected_budget' : 'Medium',
+        'Rating' : random.uniform(3.5, 5.0)
     },
     {
         'Place' : 'Montreal',
@@ -150,6 +164,7 @@ knowledge_base = [
         'Visa' : 'Yes',
         'Season_to_visit': ['Summer', 'Autumn'],
         'Expected_budget' : 'Medium',
+        'Rating' : random.uniform(3.5, 5.0)
     },
     {
         'Place' : 'Los Angeles',
@@ -160,5 +175,6 @@ knowledge_base = [
         'Visa' : 'Yes',
         'Season_to_visit': ['Spring', 'Summer'],
         'Expected_budget' : 'Medium',
+        'Rating' : random.uniform(3.5, 5.0)
     }
 ]
