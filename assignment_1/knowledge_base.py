@@ -1,148 +1,176 @@
 # This file contains the knowledge base for our travel advisory system.
+import random
+
 
 knowledge_base = [
     {
-        'Place' : 'Paris',
-        'Country' : 'France',
-        'Continent' : 'Europe',
-        'Language' : ['French', 'English'],
-        'Currency' : 'Euro',
-        'Visa' : 'Yes',
+        'Place': 'Paris',
+        'Country': 'France',
+        'Continent': 'Europe',
+        'Language': ['French', 'English'],
+        'Currency': 'Euro',
+        'Visa': 'Yes',
         'Season_to_visit': ['Spring', 'Summer'],
-        'Expected_budget' : 'High',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Expected_budget': 'High',
+        'Rating': random.uniform(3.5, 5.0),
+        'feedback': [],
+        'Activities': ['Eiffel Tower', 'Louvre Museum', 'Seine River Cruise']
     },
     {
-        'Place' : 'Tokyo',
-        'Country' : 'Japan',
-        'Continent' : 'Asia',
-        'Language' : ['Japanese', 'English'],
-        'Currency' : 'Japanese Yen',
-        'Visa' : 'Yes',
+        'Place': 'Tokyo',
+        'Country': 'Japan',
+        'Continent': 'Asia',
+        'Language': ['Japanese', 'English'],
+        'Currency': 'Japanese Yen',
+        'Visa': 'Yes',
         'Season_to_visit': ['Spring', 'Autumn'],
-        'Expected_budget' : 'Medium',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Expected_budget': 'Medium',
+        'Rating': random.uniform(3.5, 5.0),
+        'feedback': [],
+        'Activities': ['Tokyo Disneyland', 'Senso-ji Temple', 'Tsukiji Fish Market']
     },
     {
-        'Place' : 'Cancun',
-        'Country' : 'Mexico',
-        'Continent' : 'North America',
-        'Language' : ['Spanish', 'English'],
-        'Currency' : 'Mexican Peso',
-        'Visa' : 'No',
+        'Place': 'Cancun',
+        'Country': 'Mexico',
+        'Continent': 'North America',
+        'Language': ['Spanish', 'English'],
+        'Currency': 'Mexican Peso',
+        'Visa': 'No',
         'Season_to_visit': ['Winter', 'Spring'],
-        'Expected_budget' : 'Low',
-        'Rating' : random.uniform(3.5, 5.0)
-    },
-     {
-        'Place' : 'Rome',
-        'Country' : 'Italy',
-        'Continent' : 'Europe',
-        'Language' : ['Italian', 'English'],
-        'Currency' : 'Euro',
-        'Visa' : 'Yes',
-        'Season_to_visit': ['Spring', 'Fall'],
-        'Expected_budget' : 'Medium',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Expected_budget': 'Low',
+        'Rating': random.uniform(3.5, 5.0),
+        'feedback': [],
+        'Activities': ['Mayan Ruins', 'Beaches', 'Snorkeling']
     },
     {
-        'Place' : 'New York City',
-        'Country' : 'United States',
-        'Continent' : 'North America',
-        'Language' : ['English', 'Spanish'],
-        'Currency' : 'US Dollar',
-        'Visa' : 'Yes',
+        'Place': 'Rome',
+        'Country': 'Italy',
+        'Continent': 'Europe',
+        'Language': ['Italian', 'English'],
+        'Currency': 'Euro',
+        'Visa': 'Yes',
         'Season_to_visit': ['Spring', 'Fall'],
-        'Expected_budget' : 'High',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Expected_budget': 'Medium',
+        'Rating': random.uniform(3.5, 5.0),
+        'feedback': [],
+        'Activities': ['Colosseum', 'Vatican City', 'Trevi Fountain']
     },
     {
-        'Place' : 'Sydney',
-        'Country' : 'Australia',
-        'Continent' : 'Australia',
-        'Language' : ['English'],
-        'Currency' : 'Australian Dollar',
-        'Visa' : 'Yes',
+        'Place': 'New York City',
+        'Country': 'United States',
+        'Continent': 'North America',
+        'Language': ['English', 'Spanish'],
+        'Currency': 'US Dollar',
+        'Visa': 'Yes',
+        'Season_to_visit': ['Spring', 'Fall'],
+        'Expected_budget': 'High',
+        'Rating': random.uniform(3.5, 5.0),
+        'feedback': [],
+        'Activities': ['Statue of Liberty', 'Times Square', 'Central Park']
+    },
+    {
+        'Place': 'Sydney',
+        'Country': 'Australia',
+        'Continent': 'Australia',
+        'Language': ['English'],
+        'Currency': 'Australian Dollar',
+        'Visa': 'Yes',
         'Season_to_visit': ['Spring', 'Summer'],
-        'Expected_budget' : 'High',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Expected_budget': 'High',
+        'Rating': random.uniform(3.5, 5.0),
+        'feedback': [],
+        'Activities': ['Sydney Opera House', 'Bondi Beach', 'Harbor Bridge Climb']
     },
-     {
-        'Place' : 'Bangkok',
-        'Country' : 'Thailand',
-        'Continent' : 'Asia',
-        'Language' : ['Thai', 'English'],
-        'Currency' : 'Thai Baht',
-        'Visa' : 'Yes',
+    {
+        'Place': 'Bangkok',
+        'Country': 'Thailand',
+        'Continent': 'Asia',
+        'Language': ['Thai', 'English'],
+        'Currency': 'Thai Baht',
+        'Visa': 'Yes',
         'Season_to_visit': ['Winter', 'Summer'],
-        'Expected_budget' : 'Low',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Expected_budget': 'Low',
+        'Rating': random.uniform(3.5, 5.0),
+        'feedback': [],
+        'Activities': ['Grand Palace', 'Wat Pho', 'Street Food Markets']
     },
     {
-        'Place' : 'Beijing',
-        'Country' : 'China',
-        'Continent' : 'Asia',
-        'Language' : ['Mandarin', 'English'],
-        'Currency' : 'Chinese Yuan',
-        'Visa' : 'Yes',
+        'Place': 'Beijing',
+        'Country': 'China',
+        'Continent': 'Asia',
+        'Language': ['Mandarin', 'English'],
+        'Currency': 'Chinese Yuan',
+        'Visa': 'Yes',
         'Season_to_visit': ['Spring', 'Autumn'],
-        'Expected_budget' : 'Medium',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Expected_budget': 'Medium',
+        'Rating': random.uniform(3.5, 5.0),
+        'feedback': [],
+        'Activities': ['Great Wall of China', 'Forbidden City', 'Temple of Heaven']
     },
     {
-        'Place' : 'Seoul',
-        'Country' : 'South Korea',
-        'Continent' : 'Asia',
-        'Language' : ['Korean', 'English'],
-        'Currency' : 'Korean Won',
-        'Visa' : 'Yes',
+        'Place': 'Seoul',
+        'Country': 'South Korea',
+        'Continent': 'Asia',
+        'Language': ['Korean', 'English'],
+        'Currency': 'Korean Won',
+        'Visa': 'Yes',
         'Season_to_visit': ['Spring', 'Autumn'],
-        'Expected_budget' : 'Medium',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Expected_budget': 'Medium',
+        'Rating': random.uniform(3.5, 5.0),
+        'feedback': [],
+        'Activities': ['Gyeongbokgung Palace', 'Myeongdong Shopping Street', 'Namsan Tower']
     },
     {
-        'Place' : 'Rio de Janeiro',
-        'Country' : 'Brazil',
-        'Continent' : 'South America',
-        'Language' : ['Portuguese', 'English'],
-        'Currency' : 'Brazilian Real',
-        'Visa' : 'No',
+        'Place': 'Rio de Janeiro',
+        'Country': 'Brazil',
+        'Continent': 'South America',
+        'Language': ['Portuguese', 'English'],
+        'Currency': 'Brazilian Real',
+        'Visa': 'No',
         'Season_to_visit': ['Summer', 'Fall'],
-        'Expected_budget' : 'Medium',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Expected_budget': 'Medium',
+        'Rating': random.uniform(3.5, 5.0),
+        'feedback': [],
+        'Activities': ['Christ the Redeemer', 'Copacabana Beach', 'Sugarloaf Mountain']
     },
     {
-        'Place' : 'Machu Picchu',
-        'Country' : 'Peru',
-        'Continent' : 'South America',
-        'Language' : ['Spanish', 'Quechua'],
-        'Currency' : 'Peruvian Nuevo Sol',
-        'Visa' : 'No',
+        'Place': 'Machu Picchu',
+        'Country': 'Peru',
+        'Continent': 'South America',
+        'Language': ['Spanish', 'Quechua'],
+        'Currency': 'Peruvian Nuevo Sol',
+        'Visa': 'No',
         'Season_to_visit': ['Spring', 'Autumn'],
-        'Expected_budget' : 'High',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Expected_budget': 'High',
+        'Rating': random.uniform(3.5, 5.0),
+        'feedback': [],
+        'Activities': ['Machu Picchu Hike', 'Huayna Picchu', 'Inca Trail']
     },
     {
-        'Place' : 'Buenos Aires',
-        'Country' : 'Argentina',
-        'Continent' : 'South America',
-        'Language' : ['Spanish', 'English'],
-        'Currency' : 'Argentine Peso',
-        'Visa' : 'No',
+        'Place': 'Buenos Aires',
+        'Country': 'Argentina',
+        'Continent': 'South America',
+        'Language': ['Spanish', 'English'],
+        'Currency': 'Argentine Peso',
+        'Visa': 'No',
         'Season_to_visit': ['Spring', 'Fall'],
-        'Expected_budget' : 'Medium',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Expected_budget': 'Medium',
+        'Rating': random.uniform(3.5, 5.0),
+        'feedback': [],
+        'Activities': ['La Boca Neighborhood', 'Tango Shows', 'Recoleta Cemetery']
     },
     {
-        'Place' : 'Cusco',
-        'Country' : 'Peru',
-        'Continent' : 'South America',
-        'Language' : ['Spanish', 'Quechua'],
-        'Currency' : 'Peruvian Nuevo Sol',
-        'Visa' : 'No',
+        'Place': 'Cusco',
+        'Country': 'Peru',
+        'Continent': 'South America',
+        'Language': ['Spanish', 'Quechua'],
+        'Currency': 'Peruvian Nuevo Sol',
+        'Visa': 'No',
         'Season_to_visit': ['Spring', 'Autumn'],
-        'Expected_budget' : 'Medium',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Expected_budget': 'Medium',
+        'Rating': random.uniform(3.5, 5.0),
+        'feedback': [],
+        'Activities': ['Sacsayhuaman', 'Plaza de Armas', 'San Pedro Market']
     },
     {
         'Place' : 'Santiago',
@@ -153,7 +181,9 @@ knowledge_base = [
         'Visa' : 'No',
         'Season_to_visit': ['Spring', 'Summer'],
         'Expected_budget' : 'Medium',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Rating' : random.uniform(3.5, 5.0),
+        'feedback' : [],
+        'Activities': ['Cerro San Cristobal', 'Plaza de Armas', 'Cerro Santa Lucia']    
     },
     {
         'Place' : 'Montreal',
@@ -164,7 +194,9 @@ knowledge_base = [
         'Visa' : 'Yes',
         'Season_to_visit': ['Summer', 'Autumn'],
         'Expected_budget' : 'Medium',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Rating' : random.uniform(3.5, 5.0),
+        'feedback' : [],
+        'Activities': ['Old Montreal', 'Mount Royal', 'Montreal Botanical Gardens']
     },
     {
         'Place' : 'Los Angeles',
@@ -175,6 +207,10 @@ knowledge_base = [
         'Visa' : 'Yes',
         'Season_to_visit': ['Spring', 'Summer'],
         'Expected_budget' : 'Medium',
-        'Rating' : random.uniform(3.5, 5.0)
+        'Rating' : random.uniform(3.5, 5.0),
+        'feedback' : [],
+        'Activities': ['Hollywood', 'Universal Studios', 'Santa Monica Pier']
     }
 ]
+
+
