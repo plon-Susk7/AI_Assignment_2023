@@ -20,7 +20,8 @@
             "Eiffel Tower",
             "Louvre Museum",
             "Seine River Cruise"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "Tokyo",
@@ -43,7 +44,8 @@
             "Tokyo Disneyland",
             "Senso-ji Temple",
             "Tsukiji Fish Market"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "Cancun",
@@ -66,7 +68,8 @@
             "Mayan Ruins",
             "Beaches",
             "Snorkeling"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "Rome",
@@ -89,7 +92,8 @@
             "Colosseum",
             "Vatican City",
             "Trevi Fountain"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "New York City",
@@ -112,7 +116,8 @@
             "Statue of Liberty",
             "Times Square",
             "Central Park"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "Sydney",
@@ -134,7 +139,8 @@
             "Sydney Opera House",
             "Bondi Beach",
             "Harbor Bridge Climb"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "Bangkok",
@@ -157,7 +163,8 @@
             "Grand Palace",
             "Wat Pho",
             "Street Food Markets"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "Beijing",
@@ -180,7 +187,8 @@
             "Great Wall of China",
             "Forbidden City",
             "Temple of Heaven"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "Seoul",
@@ -203,7 +211,8 @@
             "Gyeongbokgung Palace",
             "Myeongdong Shopping Street",
             "Namsan Tower"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "Rio de Janeiro",
@@ -226,7 +235,8 @@
             "Christ the Redeemer",
             "Copacabana Beach",
             "Sugarloaf Mountain"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "Machu Picchu",
@@ -249,7 +259,8 @@
             "Machu Picchu Hike",
             "Huayna Picchu",
             "Inca Trail"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "Buenos Aires",
@@ -272,7 +283,8 @@
             "La Boca Neighborhood",
             "Tango Shows",
             "Recoleta Cemetery"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "Cusco",
@@ -295,7 +307,8 @@
             "Sacsayhuaman",
             "Plaza de Armas",
             "San Pedro Market"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "Santiago",
@@ -318,7 +331,8 @@
             "Cerro San Cristobal",
             "Plaza de Armas",
             "La Chascona"
-        ]
+        ],
+        "reviewers": 10
     },
     {
         "Place": "Kathmandu",
@@ -336,11 +350,14 @@
             "Spring"
         ],
         "Expected_budget": "Low",
-        "Rating": 8.0,
-        "feedback": [],
+        "Rating": 8.5,
+        "feedback": [
+            "Great Place"
+        ],
         "Activities": [
             "Treking",
             "MountainClimbing"
-        ]
+        ],
+        "reviewers": 10
     }
 ]

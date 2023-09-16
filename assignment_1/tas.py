@@ -104,7 +104,7 @@ def add_feedback():
     for place in knowledge_base:
         if place['Place'] == place_name:
             place['feedback'].append(feedback_text)
-            place['Rating'] = (place['Rating'] + rating) / 2
+            place['Rating'] = (place['Rating'] + rating) / place['reviewers']
             
             # Write the updated knowledge_base list back to the JSON file
             with open("knowledge_base.json", "w") as json_file:
