@@ -1,18 +1,10 @@
-from knowledge_base import knowledge_base
-'''
-    'Place' : 'Montreal',
-    'Country' : 'Canada',
-    'Continent' : 'North America',
-    'Language' : ['French', 'English'],
-    'Currency' : 'Canadian Dollar',
-    'Visa' : 'Yes',
-    'Season_to_visit': ['Summer', 'Autumn'],
-    'Expected_budget' : 'Medium',
-    'Rating' : random.uniform(3.5, 5.0),
-    'feedback' : [],
-    'Activites' : []
-'''
-    
+import random
+import json
+
+# Load data from knowledge_base.json
+with open("knowledge_base.json", "r") as json_file:
+    knowledge_base = json.load(json_file)
+
 def printDetails(score):
     for key, value in score.items():
         print(key, value)
@@ -27,7 +19,6 @@ def add_score(score_map, places, score):
 def filter_places(places, question, answer, score_map, score):
     filtered_places = []
     for place in places:
-        print(place)
         if place[question] == answer:
             filtered_places.append(place)
     add_score(score_map, filtered_places, score)
@@ -81,40 +72,73 @@ def recommend_destination():
             for place in places:
                 print(place['Place'])
 
-
 def add_new_destination():
-    pass
+    new_place = {}
+    new_place['Place'] = input("Enter the place: ")
+    new_place['Country'] = input("Enter the country: ")
+    new_place['Continent'] = input("Enter the continent: ")
+    new_place['Language'] = input("Enter the language: ").split()
+    new_place['Currency'] = input("Enter the currency: ")
+    new_place['Visa'] = input("Does the place require a visa? : ")
+    new_place['Season_to_visit'] = input("Enter the season to visit: ").split()
+    new_place['Expected_budget'] = input("Enter the expected budget: ")
+    new_place['Rating'] = float(input("Enter the rating: "))
+    new_place['feedback'] = []
+    new_place['Activities'] = input("Enter the activities: ").split()
+    
+    # Add the new place to the knowledge_base list
+    knowledge_base.append(new_place)
+    
+    # Write the updated knowledge_base list back to the JSON file
+    with open("knowledge_base.json", "w") as json_file:
+        json.dump(knowledge_base, json_file, indent=4)
+    
+    print("New destination added successfully!")
 
 
 def add_feedback():
-    pass
+    place_name = input("Enter the place: ")
+    feedback_text = input("Enter the feedback: ")
+    rating = float(input("Enter the rating: "))
+    
+    for place in knowledge_base:
+        if place['Place'] == place_name:
+            place['feedback'].append(feedback_text)
+            place['Rating'] = (place['Rating'] + rating) / 2
+            
+            # Write the updated knowledge_base list back to the JSON file
+            with open("knowledge_base.json", "w") as json_file:
+                json.dump(knowledge_base, json_file, indent=4)
+            
+            print("Feedback added successfully!")
+            return
+    
+    print("Place not found. Please try again.")
+    add_feedback()
 
 
 def main():
-    # <---------------------------------------------------> #
     print("Welcome to Travel Agency System")
     print("Please choose one of the following options:")
     print("1. Recommend destination")
     print("2. Add new destination")
     print("3. Add feedback")
     print("4. Exit")
-    # <---------------------------------------------------> #
-    option = input("Enter your option: ")
-    if option == "1":
-        recommend_destination()
-    elif option == "2":
-        add_new_destination()
-    elif option == "3":
-        add_feedback()
-    elif option == "4":
-        print("Thank you for using Travel Agency System")
-        exit()
-    else:
-        print("Invalid option. Please try again.")
-        main()
-
-
     
+    while True:
+        option = input("Enter your option: ")
+        if option == "1":
+            recommend_destination()
+            exit()
+        elif option == "2":
+            add_new_destination()
+        elif option == "3":
+            add_feedback()
+        elif option == "4":
+            print("Thank you for using Travel Agency System")
+            exit()
+        else:
+            print("Invalid option. Please try again.")
 
-
-main()
+if __name__ == "__main__":
+    main()
