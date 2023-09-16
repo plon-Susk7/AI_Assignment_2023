@@ -1,6 +1,4 @@
 from knowledge_base import knowledge_base
-
-
 '''
     'Place' : 'Montreal',
     'Country' : 'Canada',
@@ -53,22 +51,31 @@ def recommend_destination():
     for question, filter_key, answer, score in questions:
         user_input = input(question)
         if filter_key == "Expected_budget":
-            places = filter_places(places, filter_key, user_input, score_map, score)
+            temp = filter_places(places, filter_key, user_input, score_map, score)
+            if temp:
+                places = temp
         elif filter_key == "Season_to_visit":
             filtered_places = []
             for place in places:
                 if user_input in place[filter_key]:
                     filtered_places.append(place)
             add_score(score_map, filtered_places, score)
-            places = filtered_places
+            if filtered_places:
+                places = filtered_places
         elif filter_key == "Rating":
-            places = filter_places(places, filter_key, float(user_input), score_map, score)
+            filtered_places = []
+            for place in places:
+                if float(user_input) <= place[filter_key]:
+                    filtered_places.append(place)
+            add_score(score_map, filtered_places, score)
+            if filtered_places:
+                places = filtered_places
         else:
-            places = filter_places(places, filter_key, user_input, score_map, score)
+            temp = filter_places(places, filter_key, user_input, score_map, score)
+            if temp:
+                places = temp
         
         printDetails(score_map)
-
-
         if places:
             print("We recommend the following places for you:")
             for place in places:
