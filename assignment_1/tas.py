@@ -68,9 +68,11 @@ def recommend_destination():
         
         printDetails(score_map)
         if places:
-            print("We recommend the following places for you:")
+            print("We recommend the following places for you after continous evaluation:")
             for place in places:
                 print(place['Place'])
+    
+    # Need to add final recommendation logic here
 
 def add_new_destination():
     new_place = {}
@@ -99,12 +101,13 @@ def add_new_destination():
 def add_feedback():
     place_name = input("Enter the place: ")
     feedback_text = input("Enter the feedback: ")
-    rating = float(input("Enter the rating: "))
+    rating = int(input("Enter the rating: "))
     
     for place in knowledge_base:
         if place['Place'] == place_name:
             place['feedback'].append(feedback_text)
-            place['Rating'] = (place['Rating'] + rating) / place['reviewers']
+            place['Rating'] = (place['Rating']*place['reviewers'] + rating) / (place['reviewers']+1)
+            place['reviewers'] += 1
             
             # Write the updated knowledge_base list back to the JSON file
             with open("knowledge_base.json", "w") as json_file:
@@ -116,16 +119,28 @@ def add_feedback():
     print("Place not found. Please try again.")
     add_feedback()
 
+def print_feedback():
+    place_name = input("Enter the place: ")
+    
+    for place in knowledge_base:
+        if place['Place'] == place_name:
+            print("Feedback for", place_name)
+            for feedback in place['feedback']:
+                print(feedback)
+            return
+    
+    print("Place not found. Please try again.")
+    print_feedback()
 
 def main():
-    print("Welcome to Travel Agency System")
-    print("Please choose one of the following options:")
-    print("1. Recommend destination")
-    print("2. Add new destination")
-    print("3. Add feedback")
-    print("4. Exit")
-    
     while True:
+        print("Welcome to Travel Agency System")
+        print("Please choose one of the following options:")
+        print("1. Recommend destination")
+        print("2. Add new destination")
+        print("3. Add feedback")
+        print("4. View feedback")
+        print("5. Exit")    
         option = input("Enter your option: ")
         if option == "1":
             recommend_destination()
@@ -135,6 +150,8 @@ def main():
         elif option == "3":
             add_feedback()
         elif option == "4":
+            print_feedback()
+        elif option == "5":
             print("Thank you for using Travel Agency System")
             exit()
         else:

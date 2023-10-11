@@ -325,14 +325,16 @@
             "Summer"
         ],
         "Expected_budget": "Medium",
-        "Rating": 5,
-        "feedback": [],
+        "Rating": 7,
+        "feedback": [
+            "Chill weather"
+        ],
         "Activities": [
             "Cerro San Cristobal",
             "Plaza de Armas",
             "La Chascona"
         ],
-        "reviewers": 10
+        "reviewers": 11
     },
     {
         "Place": "Kathmandu",
@@ -350,14 +352,16 @@
             "Spring"
         ],
         "Expected_budget": "Low",
-        "Rating": 8.5,
+        "Rating": 8,
         "feedback": [
-            "Great Place"
+            "Great Place",
+            "The place is nice",
+            "Good Food"
         ],
         "Activities": [
             "Treking",
             "MountainClimbing"
         ],
-        "reviewers": 10
+        "reviewers": 11
     }
 ]
