@@ -70,7 +70,7 @@ def recommend_destination():
         if places:
             print("We recommend the following places for you after continous evaluation:")
             for place in places:
-                print(place['Place'])
+                print(f"Place : {place['Place']} | Country: {place['Country']} | Rating : {place['Rating']}")
     
     # Need to add final recommendation logic here
 
