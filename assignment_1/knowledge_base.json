@@ -363,5 +363,48 @@
             "MountainClimbing"
         ],
         "reviewers": 11
+    },
+    {
+        "Place": "Pokhara",
+        "Country": "Nepal",
+        "Continent": "Asia",
+        "Language": [
+            "English",
+            "Nepali"
+        ],
+        "Currency": "Rupees",
+        "Visa": "No",
+        "Season_to_visit": [
+            "Winter",
+            "Summer",
+            "Autumn"
+        ],
+        "Expected_budget": "Low",
+        "Rating": 7.0,
+        "feedback": [],
+        "Activities": [
+            "Hiking",
+            "Boating",
+            "Rafting"
+        ]
+    },
+    {
+        "Place": "Pune",
+        "Country": "India",
+        "Continent": "Asia",
+        "Language": [
+            "Hindi"
+        ],
+        "Currency": "Rupee",
+        "Visa": "No",
+        "Season_to_visit": [
+            "Summer"
+        ],
+        "Expected_budget": "Medium",
+        "Rating": 3.0,
+        "feedback": [],
+        "Activities": [
+            "Sleeping"
+        ]
     }
 ]
